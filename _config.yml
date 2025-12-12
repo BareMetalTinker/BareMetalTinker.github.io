@@ -4,7 +4,7 @@ name: Bare Metal Tinker
 author: Bare Metal Tinker
 description: "Embedded Software Engineer | C | STM32 | Linux"
 url: "https://www.baremetaltinker.com"
-logo: "/assets/images/logo.png"
+logo: "/assets/images/my-logo.png"
 
 # The Magic Switch (Activates the Theme)
 remote_theme: mmistakes/minimal-mistakes
