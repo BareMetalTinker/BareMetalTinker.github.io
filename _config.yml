@@ -1,0 +1,23 @@
+# _config.yml
+title: Bare Metal Tinker
+name: Bare Metal Tinker
+author: Bare Metal Tinker
+description: "Embedded Software Engineer | C | STM32 | Linux"
+url: "https://www.baremetaltinker.com"
+
+# The Magic Switch (Activates the Theme)
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+# Settings
+minimal_mistakes_skin: "dark" # Options: "default", "air", "contrast", "dark", "mint", "sunrise"
+search: true
+
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/BareMetalTinker"
