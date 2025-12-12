@@ -4,6 +4,7 @@ name: Bare Metal Tinker
 author: Bare Metal Tinker
 description: "Embedded Software Engineer | C | STM32 | Linux"
 url: "https://www.baremetaltinker.com"
+logo: "/assets/images/logo.png"
 
 # The Magic Switch (Activates the Theme)
 remote_theme: mmistakes/minimal-mistakes
@@ -14,6 +15,20 @@ plugins:
 # Settings
 minimal_mistakes_skin: "dark" # Options: "default", "air", "contrast", "dark", "mint", "sunrise"
 search: true
+
+# Defaults (Applies layout and MathJax to all posts automatically)
+defaults:                 
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      mathjax: true       # <--- This enables the LaTeX math support
 
 # Footer
 footer:
