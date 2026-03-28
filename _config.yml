@@ -1,23 +1,48 @@
 # _config.yml
 title: Bare Metal Tinker
 name: Bare Metal Tinker
-author: Bare Metal Tinker
-description: "Embedded Software Engineer | C | STM32 | Linux"
+description: "Senior Embedded Software Engineer | C | STM32 | Home Automation"
 url: "https://www.baremetaltinker.com"
 logo: "/assets/images/my-logo.png"
 
-# The Magic Switch (Activates the Theme)
+# Theme
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "dark"
+
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
 
-# Settings
-minimal_mistakes_skin: "dark" # Options: "default", "air", "contrast", "dark", "mint", "sunrise"
+# Site settings
 search: true
+locale: "en-US"
 
-# Defaults (Applies layout and MathJax to all posts automatically)
-defaults:                 
+# Author sidebar (appears on pages with author_profile: true)
+author:
+  name: "Bare Metal Tinker"
+  avatar: "/assets/images/my-logo.png"
+  bio: "Senior Embedded Software Engineer specializing in bare metal C, STM32, and Home Automation."
+  location: "Europe"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/BareMetalTinker"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "#"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:your-email@example.com"
+
+# Collections (for portfolio projects)
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  # Posts
   - scope:
       path: ""
       type: posts
@@ -28,7 +53,14 @@ defaults:
       comments: true
       share: true
       related: true
-      mathjax: true       # <--- This enables the LaTeX math support
+  # Portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 # Footer
 footer:
